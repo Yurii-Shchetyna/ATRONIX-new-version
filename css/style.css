@@ -11,6 +11,10 @@
 }
 html {
 	scroll-behavior: smooth;
+	overflow-x: hideen;
+}
+body {
+	overflow-x: hidden;
 }
 button {
 	background: initial;
@@ -190,14 +194,15 @@ h2 {
 	height: 30%;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
 	pointer-events: none;
+	overflow: hidden;
 }
 
 .bg-dark {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 170vw;
-	height: 200vh;
+	width: 100vw;
+	height: 100lvh;
 	overflow: hidden;
 	z-index: -10;
 }
@@ -206,11 +211,12 @@ h2 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 170vw;
+	height: 200lvh;
 	object-fit: cover;
 	z-index: -10;
 	pointer-events: none;
+	overflow: hidden;
 }
 
 .content {
@@ -221,7 +227,7 @@ h2 {
 }
 
 .hero-content {
-	height: 80vh;
+	height: 80lvh;
 	width: 100%;
 	color: #ff7f50;
 	display: flex;
@@ -271,20 +277,6 @@ h2 {
 	gap: 80px;
 }
 
-/*
-.products::after{
-	content: "";
-	position: absolute;
-	top: -100px;
-	left: 0;
-	height: 120px;
-	width: 100vw;
-	background: #000;
-	pointer-events: none;
-	z-index: -7;
-}
-
-*/
 .products::before {
 	content: "";
 	position: absolute;
